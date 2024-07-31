@@ -21,6 +21,9 @@ const list: List[] = [
     name: 'UnoCSS',
     logo: UnoCSSLogo,
   },
+  {
+    name: 'Unplugin Vue Router',
+  },
 ]
 </script>
 
