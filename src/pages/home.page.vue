@@ -26,7 +26,7 @@ const list: List[] = [
 
 <template>
   <div size-screen flex items-center justify-center>
-    <div flex items-center gap-20px>
+    <div flex flex-col items-center gap-20px md:flex-row>
       <HelloWorld msg="Primary Package" />
       <PrimaryPackageList :list="list" />
     </div>
