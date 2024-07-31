@@ -5,7 +5,7 @@ import UnoCSSLogo from '@/assets/logos/unocss.svg'
 import ViteLogo from '@/assets/logos/vite.svg'
 
 defineOptions({
-  name: 'HomePage',
+  name: 'IndexPage',
 })
 
 const list: List[] = [

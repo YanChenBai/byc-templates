@@ -26,7 +26,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.23.0
-        version: 2.23.0(@vue/compiler-sfc@3.4.34)(eslint-plugin-format@0.1.2(eslint@8.57.0))(eslint@8.57.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.13)(jsdom@24.1.1))
+        version: 2.23.0(@unocss/eslint-plugin@0.61.8(eslint@8.57.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.34)(eslint-plugin-format@0.1.2(eslint@8.57.0))(eslint@8.57.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.13)(jsdom@24.1.1))
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
         version: 1.10.4
@@ -39,6 +39,9 @@ importers:
       '@types/node':
         specifier: ^20.14.5
         version: 20.14.13
+      '@unocss/eslint-plugin':
+        specifier: ^0.61.8
+        version: 0.61.8(eslint@8.57.0)(typescript@5.4.5)
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
         version: 5.1.1(vite@5.3.5(@types/node@20.14.13))(vue@3.4.34(typescript@5.4.5))
@@ -918,6 +921,10 @@ packages:
 
   '@unocss/core@0.61.8':
     resolution: {integrity: sha512-WFCJVGrhyNyF5i2SBTO3vR9HE+hMi7aP+e3VpAkveiqoCh3QBm2AeoEGUGpBPTLTZpb7AhcqOkRPiPeYk3+z+A==}
+
+  '@unocss/eslint-plugin@0.61.8':
+    resolution: {integrity: sha512-qCCsdO8IHpaJyl3Dilfb7NbZKPXdNkiqHOykWdT4CjLIAsFlLMOWnNTRx+oCfPZKlE6DArvsg+70KSNmex9u4g==}
+    engines: {node: '>=14'}
 
   '@unocss/extractor-arbitrary-variants@0.61.8':
     resolution: {integrity: sha512-4vFExQhUBNWtrZS7jOYJrX9VzNLE6ynUFK+W1E5NJpozQqHbzFvbNYT5KC6+IMzmWPQQswd2ktMuDQwL+C1Qpg==}
@@ -3096,7 +3103,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/eslint-config@2.23.0(@vue/compiler-sfc@3.4.34)(eslint-plugin-format@0.1.2(eslint@8.57.0))(eslint@8.57.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.13)(jsdom@24.1.1))':
+  '@antfu/eslint-config@2.23.0(@unocss/eslint-plugin@0.61.8(eslint@8.57.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.34)(eslint-plugin-format@0.1.2(eslint@8.57.0))(eslint@8.57.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.13)(jsdom@24.1.1))':
     dependencies:
       '@antfu/eslint-plugin-unused-imports': 4.0.0(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)
       '@antfu/install-pkg': 0.3.3
@@ -3135,6 +3142,7 @@ snapshots:
       yaml-eslint-parser: 1.2.3
       yargs: 17.7.2
     optionalDependencies:
+      '@unocss/eslint-plugin': 0.61.8(eslint@8.57.0)(typescript@5.4.5)
       eslint-plugin-format: 0.1.2(eslint@8.57.0)
     transitivePeerDependencies:
       - '@vue/compiler-sfc'
@@ -3995,6 +4003,18 @@ snapshots:
       - supports-color
 
   '@unocss/core@0.61.8': {}
+
+  '@unocss/eslint-plugin@0.61.8(eslint@8.57.0)(typescript@5.4.5)':
+    dependencies:
+      '@typescript-eslint/utils': 7.18.0(eslint@8.57.0)(typescript@5.4.5)
+      '@unocss/config': 0.61.8
+      '@unocss/core': 0.61.8
+      magic-string: 0.30.11
+      synckit: 0.9.1
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
 
   '@unocss/extractor-arbitrary-variants@0.61.8':
     dependencies:
